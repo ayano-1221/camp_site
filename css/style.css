@@ -1,0 +1,393 @@
+/* 共通
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
+:root {
+  --green: #0c2d11; /* ページの背景(緑)*/
+  --brown: #5a3112; /* ページの背景(メイン茶色)*/
+  --beige: #fcefd3; /* ページの背景(メインベージュ)*/
+  --text: #ffffff; /* 基本の文字色 */
+  --blue: #5cdcff; /* アクセント色*/
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+body{
+    color: var(--text);
+  /* font-family: "Noto Serif SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal; */
+
+    /* font-family: "Zen Antique", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.2rem; */
+
+  font-family: "Iansui", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+
+/* header
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+header{
+    background-color: #0c2d11c5;
+    /* position: absolute; */
+        position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    max-width: 100%;
+}
+
+header ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    align-items: center;
+}
+
+header li:hover{
+    color: #b5f0ff;
+    transition: .3s;
+}
+
+header li:nth-of-type(6){
+    background-color: var(--blue);
+    width: 12rem;
+    margin-right: -7rem;
+    color: var(--green);
+}
+
+header li:nth-of-type(6) a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+
+header li:nth-of-type(6):hover{
+    background-color: #87e2f9;
+    transform: .3s;
+}
+
+
+/* fv
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+#fv{
+    background-image: url(/images/olga-pro-RZTgV2Z3WRc-unsplash1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+#fv .container{
+    align-items: center;
+}
+#fv h2{
+    font-size: 6rem;
+}
+
+#fv p{
+    font-size: 2rem;
+}
+
+/* メインビジュアル */
+#fv {
+    position: relative;
+    min-height: 600px;
+    background-color: #2E523A;
+    padding: 100px 0 120px;
+}
+
+/* 波型の境目 */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+
+/* コンセプト */
+#concept {
+    background-color: #F5F1E8;
+    padding: 80px 0;
+}
+
+/* コンセプト
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+#concept{
+    background-color:var(--beige);
+    height: 20rem;
+    display: flex;
+    align-items: center;
+}
+#concept .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#concept img{
+    height: 15rem;
+}
+
+/* お知らせ
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+#news{
+    background-color: var(--brown);
+    height: 20rem;
+    padding-top: 3rem;
+
+}
+#news h2{
+    text-align: center;
+
+}
+
+.news_list{
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#news dt, #news dd{
+    padding: 1.5rem 0 .7rem 0;
+    border-bottom: .3px solid var(--beige);
+}
+
+
+
+/* 施設の魅力
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+#features{
+background-image:url(../images/34887092_s.jpg) ;
+background-size: covers;
+
+    padding:5rem 0;
+}
+
+#features h2{
+    width: 30%;
+}
+
+#features .container{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 70%;
+}
+.features img{
+    height: 10rem;
+}
+.features_item{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    
+}
+
+/* 宿泊プラン
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+#stay{
+    background-color: var(--beige);
+    
+}
+#stay .container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 5rem 0
+}
+.stay_title{
+    flex: 3;
+    color: var(--brown);
+}
+.stay_item{
+    flex: 7;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.plan-card{
+    background-color: var(--green);
+    border-radius: 10%;
+    padding: 2rem;
+    min-width: 22rem;
+}
+
+.stay_item img{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ギャラリー
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+#gallery{
+    background-color: var(--green);
+    padding: 5rem 0;
+
+}
+
+#gallery{
+    text-align: center;
+}
+
+.gallery-grid{
+    display: grid;
+    
+}
+
+/* アクセス
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+#access{
+    background-color: var(--brown);
+    padding: 5rem 0;
+}
+
+.access{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.access_info dl{
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 1rem;
+    margin-top: 5rem;
+    line-height: 2rem;
+}
+
+/* お問い合わせ
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+#contact{
+    background-color: var(--beige);
+    color: var(--green);
+    padding: 5rem 0;
+}
+
+#contact h2 ,#contact p{
+    text-align: center;
+}
+
+#contact p{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+form{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+input,
+select,
+textarea{
+    border: 1px solid #ccc;
+    padding: .8rem;
+}
+
+#contact select{
+    appearance: auto;
+}
+
+
+.form_group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form_group label{
+    width: 10rem;
+    flex-shrink: 0;
+}
+
+.form_group input,
+.form_group select,
+.form_group textarea{
+    /* flex: 1; */
+    width: 40rem;
+}
+
+.form_group textarea{
+    height: 10rem;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 2rem auto 0;
+    background-color: var(--brown);
+    color: var(--text);
+    border-radius: .5rem;
+        padding: 1rem 2rem;
+
+}
+
+input[type="submit"]:hover{
+    background-color: #7d451a;
+    transition: .3s;
+}
+
+
+
+
+
+/* footer
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+footer{
+    background-color: var(--green);
+    padding: 1rem 0;
+}
+
+footer p{
+    text-align: center;
+}
